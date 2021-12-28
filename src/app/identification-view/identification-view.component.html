@@ -1,0 +1,7 @@
+<div *ngIf="name===''">
+        <label for="fname">name:</label><br>
+        <input (keydown.enter)="enterKey($event)" ><br>
+</div>
+<div *ngIf="name!=''">
+    <app-profile-view name="{{name}}"></app-profile-view>
+</div>
